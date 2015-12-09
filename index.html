@@ -1,58 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 	<title>Project Portfolio</title>
 </head>
 
 <body>
-	<header>
-		<H1>Sean Holcomb</H1>
-		<h3>Web Devloper</h3>
-	</header>
-	<hr>
+<div class="container">
 
-	<div>
+	<header>
+		<div class="row">
+			<div class="col-md-2">
+				<img src="images_src/Udacity_Logo.svg" class="logo" alt="Udacity Logo">
+			</div>
+			<div class="col-md-10 text-right">
+				<H1 class="text-thin">Sean Holcomb</H1>
+				<h3>Web Devloper</h3>
+			</div>
+		</div>
+		<hr>
+	</header>
+
+	<div class ="row">
 		<picture>
 			<source media="(min-width: 800px)" srcset="images/filler1-1600.jpg">
         	<source media="(min-width: 400px)" srcset="images/filler1-800.jpg">
-			<img class="banner" src="images/filler1-400.jpg" alt="A filler image"/>
+			<img src="images/filler1-400.jpg" class="img-responsive" alt="A filler image"/>
 		</picture>
-		<h2>Featured Work</h2>
-		<section>
-			<picture>
+	</div>
+	<div class="row">
+		<h2 class="text-muted">Featured Work</h2>
+	</div>
+	<div class ="row">
+		<section class="col-md-4">
+			<picture class="feat-pic">
 				<source media="(min-width: 800px)" srcset="images/filler2-1600.jpg">
         		<source media="(min-width: 400px)" srcset="images/filler2-800.jpg">
-				<img src="images/filler2-400.jpg" alt="A filler image"/>
+				<img src="images/filler2-400.jpg" class="img-responsive" alt="A filler image"/>
 			</picture>
-			<h2>Title</h2>
-			<a href=""></a>
+			<h2 class="text-center feat-title">Classic Arcade Game Clone</h2>
+			<p>You will be provided with visual assets and a game loop engine; using these tools you must add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger. </p>
+			<a href="https://github.com/">Source Code</a>
 		</section>
 
-		<section>
-			<picture>
+		<section class="col-md-4">
+			<picture class="feat-pic">
 				<source media="(min-width: 800px)" srcset="images/filler3-1600.jpg">
-        		<source media="(min-width: 400px)" srcset="images/filler3-800.jpg">
-				<img src="images/filler3-400.jpg" alt="A filler image"/>
+    	   		<source media="(min-width: 400px)" srcset="images/filler3-800.jpg">
+				<img src="images/filler3-400.jpg" class="img-responsive" alt="A filler image"/>
 			</picture>
-			<h2>Title</h2>
-			<a href=""></a>
+			<h2 class="text-center feat-title">Neighborhood Map</h2>
+			<p>You will develop a single-page application featuring a map of your neighborhood or a neighborhood you would like to visit. You will then add additional functionality to this application, including: map markers to identify popular locations or places you’d like to visit, a search function to easily discover these locations, and a listview to support simple browsing of all locations. </p>
+			<a href="https://github.com/">Source Code</a>
 		</section>
 
-		<section>
-			<picture>
+		<section class="col-md-4">
+			<picture class="feat-pic">
 				<source media="(min-width: 800px)" srcset="images/filler4-1600.jpg">
-        		<source media="(min-width: 400px)" srcset="images/filler4-800.jpg">
-				<img src="images/filler4-400.jpg" alt=""/>
+    		 	<source media="(min-width: 400px)" srcset="images/filler4-800.jpg">
+				<img src="images/filler4-400.jpg" class="img-responsive" alt=""/>
 			</picture>
-			<h2>Title</h2>
-			<a href=""></a>
+			<h2 class="text-center feat-title">Feed Reader Testing</h2>
+			<p>In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included Jasmine and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in. </p>
+			<a href="https://github.com/">Source Code</a>
 		</section>
 	</div>
-
+</div>
 </body>
 </html>
