@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
-	<title>Project Portfolio</title>
-</head>
-
-<body>
-<div class="container">
-
-	<header>
-		<div class="row">
-			<div class="col-md-2">
-				<img src="images_src/Udacity_Logo.svg" class="logo" alt="Udacity Logo">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+		<title>Project Portfolio</title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="row">
+					<div class="col-md-2">
+						<img src="images_src/Udacity_Logo.svg" class="logo" alt="Udacity Logo">
+					</div>
+					<div class="col-md-10 text-right">
+						<h1 class="text-thin">Sean Holcomb</h1>
+						<h3>Web Devloper</h3>
+					</div>
+				</div>
+				<hr>
+			</header>
+			<div class ="row">
+				<picture>
+					<source media="(min-width: 501px)" srcset="images/wave-800.jpg">
+					<source media="(max-width: 500px)" srcset="images/wave-500.jpg">
+					<img src="images/wave-800.jpg" class="img-responsive" alt="A large wave"/>
+				</picture>
 			</div>
-			<div class="col-md-10 text-right">
-				<H1 class="text-thin">Sean Holcomb</H1>
-				<h3>Web Devloper</h3>
+			<nav class="navbar">
+				<div class="container">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Portfolio Site </a></li>
+						<li class="active"><a href="#">Online Resume </a></li>
+						<li class="active"><a href="#">Classic Arcade Game Clone</a></li>
+						<li class="active"><a href="#">Website Optimization </a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="row">
+				<h2 class="text-muted">Featured Work</h2>
+			</div>
+			<hr>
+			<div class ="row">
+				<picture class="col-md-4">
+					<source media="(min-width: 501px)" srcset="images/frogger-500.png">
+					<source media="(max-width: 300px)" srcset="images/frogger-300.png">
+					<img src="images/frogger-500.png" class="img-responsive feat-pic" alt="The game frogger"/>
+				</picture>
+				<section class="col-md-8">
+					<h2 class="text-left feat-title">Classic Arcade Game Clone</h2>
+					<p>You will be provided with visual assets and a game loop engine; using these tools you must add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger. </p>
+					<a href="https://github.com/">Source Code</a>
+				</section>
+			</div>
+			<hr>
+			<div class="row">
+				<picture class="col-md-4">
+					<source media="(min-width: 501px)" srcset="images/map-500.jpg">
+					<source media="(max-width: 500px)" srcset="images/map-300.jpg">
+					<img src="images/map-500.jpg" class="img-responsive feat-pic" alt="A Google map"/>
+				</picture>
+				<section class="col-md-8">
+					<h2 class="text-left feat-title">Neighborhood Map</h2>
+					<p>You will develop a single-page application featuring a map of your neighborhood or a neighborhood you would like to visit. You will then add additional functionality to this application, including: map markers to identify popular locations or places you’d like to visit, a search function to easily discover these locations, and a listview to support simple browsing of all locations. </p>
+					<a href="https://github.com/">Source Code</a>
+				</section>
+			</div>
+			<hr>
+			<div class="row">
+				<picture class="col-md-4">
+					<source media="(min-width: 501px)" srcset="images/rss-500.gif">
+					<source media="(max-width: 500px)" srcset="images/rss-300.gif">
+					<img src="images/rss-500.gif" class="img-responsive feat-pic" alt="RSS logo"/>
+				</picture>
+				<section class="col-md-8">
+					<h2 class="text-left feat-title">Feed Reader Testing</h2>
+					<p>In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included Jasmine and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in. </p>
+					<a href="https://github.com/">Source Code</a>
+				</section>
 			</div>
 		</div>
-		<hr>
-	</header>
-
-	<div class ="row">
-		<picture>
-			<source media="(min-width: 501px)" srcset="images/wave-800.jpg">
-    	   	<source media="(max-width: 500px)" srcset="images/wave-500.jpg">
-			<img src="images/wave-800.jpg" class="img-responsive" alt="A large wave"/>
-		</picture>
-	</div>
-	<div class="row">
-		<h2 class="text-muted">Featured Work</h2>
-	</div>
-	<div class ="row">
-		<section class="col-md-4">
-			<picture>
-    	   		<source media="(min-width: 501px)" srcset="images/frogger-500.png">
-    	   		<source media="(max-width: 300px)" srcset="images/frogger-300.png">
-				<img src="images/frogger-500.png" class="img-responsive feat-pic" alt="The game frogger"/>
-			</picture>
-			<h2 class="text-center feat-title">Classic Arcade Game Clone</h2>
-			<p>You will be provided with visual assets and a game loop engine; using these tools you must add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger. </p>
-			<a href="https://github.com/">Source Code</a>
-		</section>
-
-		<section class="col-md-4">
-			<picture>
-    	   		<source media="(min-width: 501px)" srcset="images/map-500.jpg">
-    	   		<source media="(max-width: 500px)" srcset="images/map-300.jpg">
-				<img src="images/map-500.jpg" class="img-responsive feat-pic" alt="A Google map"/>
-			</picture>
-			<h2 class="text-center feat-title">Neighborhood Map</h2>
-			<p>You will develop a single-page application featuring a map of your neighborhood or a neighborhood you would like to visit. You will then add additional functionality to this application, including: map markers to identify popular locations or places you’d like to visit, a search function to easily discover these locations, and a listview to support simple browsing of all locations. </p>
-			<a href="https://github.com/">Source Code</a>
-		</section>
-
-		<section class="col-md-4">
-			<picture>
-    		 	<source media="(min-width: 501px)" srcset="images/rss-500.gif">
-    		 	<source media="(max-width: 500px)" srcset="images/rss-300.gif">
-				<img src="images/rss-500.gif" class="img-responsive feat-pic" alt="RSS logo"/>
-			</picture>
-			<h2 class="text-center feat-title">Feed Reader Testing</h2>
-			<p>In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included Jasmine and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in. </p>
-			<a href="https://github.com/">Source Code</a>
-		</section>
-	</div>
-</div>
-</body>
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
 </html>
