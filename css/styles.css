@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-weight: 300;
 }
@@ -12,14 +12,21 @@ h1 {
 h3{
 	margin-top: 0;
 }
-img{
+img {
 	max-width: 100%;
+}
+nav {
+	float: center;
+	width: 100%;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 hr {
 	height: 1px;
 	border: none;
-	background-color: #BCBBBB;
+	background-color: #bcbbbb;
 }
 
 .container {
@@ -35,7 +42,7 @@ hr {
 }
 
 .text-muted {
-	color: #BCBBBB;
+	color: #bcbbbb;
 }
 
 .text-thin {
